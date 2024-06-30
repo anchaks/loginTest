@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-30T17:32:51 IST" name="Functional Suite" finished-at="2024-06-30T17:33:11 IST" duration-ms="20066">
+  <suite started-at="2024-07-01T01:38:23 IST" name="Functional Suite" finished-at="2024-07-01T01:38:44 IST" duration-ms="21025">
     <groups>
     </groups>
-    <test started-at="2024-06-30T17:32:51 IST" name="Login Test" finished-at="2024-06-30T17:33:11 IST" duration-ms="20066">
+    <test started-at="2024-07-01T01:38:23 IST" name="Login Test" finished-at="2024-07-01T01:38:44 IST" duration-ms="21025">
       <class name="testClasses.TC_002_LoginFail">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testClasses.TC_002_LoginFail@78e117e3]" started-at="2024-06-30T17:32:57 IST" name="setup" finished-at="2024-06-30T17:33:00 IST" duration-ms="3425" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testClasses.TC_002_LoginFail@78e117e3]" started-at="2024-07-01T01:38:30 IST" name="setup" finished-at="2024-07-01T01:38:34 IST" duration-ms="3394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_002_LoginHCFail()[pri:0, instance:testClasses.TC_002_LoginFail@78e117e3]" started-at="2024-06-30T17:33:00 IST" name="TC_002_LoginHCFail" finished-at="2024-06-30T17:33:10 IST" duration-ms="10169" status="FAIL">
+        <test-method signature="TC_002_LoginHCFail()[pri:0, instance:testClasses.TC_002_LoginFail@78e117e3]" started-at="2024-07-01T01:38:34 IST" name="TC_002_LoginHCFail" finished-at="2024-07-01T01:38:44 IST" duration-ms="10192" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[normalize-space()='Logged In Successfully']"}
@@ -20,9 +20,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40f8fb7535845ccc5e9002450f4fac2f, findElement {using=xpath, value=//h1[normalize-space()='Logged In Successfully']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /var/folders/5r/dxm9z9z120d...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64554}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64554/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 40f8fb7535845ccc5e9002450f4fac2f]]>
+Command: [9206546e0d9ad188ad8749c088c814da, findElement {using=xpath, value=//h1[normalize-space()='Logged In Successfully']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /var/folders/5r/dxm9z9z120d...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57040}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57040/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9206546e0d9ad188ad8749c088c814da]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[normalize-space()='Logged In Successfully']"}
@@ -31,9 +31,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40f8fb7535845ccc5e9002450f4fac2f, findElement {using=xpath, value=//h1[normalize-space()='Logged In Successfully']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /var/folders/5r/dxm9z9z120d...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64554}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64554/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 40f8fb7535845ccc5e9002450f4fac2f
+Command: [9206546e0d9ad188ad8749c088c814da, findElement {using=xpath, value=//h1[normalize-space()='Logged In Successfully']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /var/folders/5r/dxm9z9z120d...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57040}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57040/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9206546e0d9ad188ad8749c088c814da
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -89,21 +89,21 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_002_LoginHCFail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.TC_002_LoginFail@78e117e3]" started-at="2024-06-30T17:33:11 IST" name="tearDown" finished-at="2024-06-30T17:33:11 IST" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.TC_002_LoginFail@78e117e3]" started-at="2024-07-01T01:38:44 IST" name="tearDown" finished-at="2024-07-01T01:38:44 IST" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testClasses.TC_002_LoginFail -->
       <class name="testClasses.TC_001_LoginHardCoded">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testClasses.TC_001_LoginHardCoded@7c0c77c7]" started-at="2024-06-30T17:32:51 IST" name="setup" finished-at="2024-06-30T17:32:55 IST" duration-ms="4434" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testClasses.TC_001_LoginHardCoded@7c0c77c7]" started-at="2024-07-01T01:38:23 IST" name="setup" finished-at="2024-07-01T01:38:28 IST" duration-ms="5243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_001_LoginHC()[pri:0, instance:testClasses.TC_001_LoginHardCoded@7c0c77c7]" started-at="2024-06-30T17:32:55 IST" name="TC_001_LoginHC" finished-at="2024-06-30T17:32:56 IST" duration-ms="1398" status="PASS">
+        <test-method signature="TC_001_LoginHC()[pri:0, instance:testClasses.TC_001_LoginHardCoded@7c0c77c7]" started-at="2024-07-01T01:38:28 IST" name="TC_001_LoginHC" finished-at="2024-07-01T01:38:30 IST" duration-ms="1525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_001_LoginHC -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.TC_001_LoginHardCoded@7c0c77c7]" started-at="2024-06-30T17:32:57 IST" name="tearDown" finished-at="2024-06-30T17:32:57 IST" duration-ms="100" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.TC_001_LoginHardCoded@7c0c77c7]" started-at="2024-07-01T01:38:30 IST" name="tearDown" finished-at="2024-07-01T01:38:30 IST" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
