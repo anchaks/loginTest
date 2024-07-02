@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Functional Suite">
-<listeners>
-<listener class-name="utilities.ExtentReportManager"/>
-</listeners>
-<test name="Login Test" thread="5">
-<classes>
-<class name="testClasses.TC_001_LoginHardCoded"/>
-<class name="testClasses.TC_002_LoginFail"/>
-</classes>
-</test>
-</suite>
+	<suite name="Functional Suite">
+		<listeners>
+			<listener class-name="utilities.ExtentReportManager"/>
+		</listeners>
+		<test name="Login Test" thread="5">
+			<classes>
+				<class name="testClasses.TC_001_LoginHardCoded"/>
+				<class name="testClasses.TC_002_LoginFail"/>
+				<class name="testClasses.TC_003_LoginFromProperties"/>
+		</classes>
+		</test>
+	</suite>

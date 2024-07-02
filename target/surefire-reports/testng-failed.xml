@@ -9,8 +9,8 @@
       <class name="testClasses.TC_002_LoginFail">
         <methods>
           <include name="setup"/>
-          <include name="tearDown"/>
           <include name="TC_002_LoginHCFail"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- testClasses.TC_002_LoginFail -->
     </classes>

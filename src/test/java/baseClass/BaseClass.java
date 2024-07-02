@@ -1,10 +1,13 @@
 package baseClass;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.Properties;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -16,13 +19,25 @@ import org.testng.annotations.BeforeClass;
 public class BaseClass 
 {
 	 public static WebDriver driver;
+	 public Properties property;
 
 	    @BeforeClass
-	    public void setup()
+	    public void setup() throws IOException
 	    {
+	    	property=new Properties();
+	    	try 
+	    	{
+				FileInputStream fis=new FileInputStream("src/test/resources/config.properties");
+				property.load(fis);
+			} 
+	    	catch (FileNotFoundException e)
+	    	{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	        driver = new ChromeDriver();
 	        driver.manage().deleteAllCookies();
-	        driver.get("https://practicetestautomation.com/practice-test-login/");
+	        driver.get(property.getProperty("appURL"));
 	        driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	    }

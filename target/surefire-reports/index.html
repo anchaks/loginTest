@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -118,6 +118,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Functional_Suite" title="testClasses.TC_001_LoginHardCoded" class="method navigator-link" hash-for-method="TC_001_LoginHC">TC_001_LoginHC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Functional_Suite" title="testClasses.TC_003_LoginFromProperties" class="method navigator-link" hash-for-method="TC_003_LoginProperties">TC_003_LoginProperties</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Functional_Suite -->
@@ -149,9 +154,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;21.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9206546e0d9ad188ad8749c088c814da, findElement {using=xpath, value=//h1[normalize-space()=&apos;Logged In Successfully&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /var/folders/5r/dxm9z9z120d...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57040}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57040/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9206546e0d9ad188ad8749c088c814da
+Command: [11f78b98a5f8d4ab6cbb0bedefcfb136, findElement {value=//h1[normalize-space()=&apos;Logged In Successfully&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /var/folders/5r/dxm9z9z120d...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57454}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57454/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 11f78b98a5f8d4ab6cbb0bedefcfb136
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -190,6 +195,21 @@ Session ID: 9206546e0d9ad188ad8749c088c814da
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Functional_Suite-class-passed -->
+          <div class="suite-Functional_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testClasses.TC_003_LoginFromProperties</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_003_LoginProperties">
+                  </a> <!-- TC_003_LoginProperties -->
+                  <span class="method-name">TC_003_LoginProperties</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Functional_Suite-class-passed -->
         </div> <!-- panel Functional_Suite -->
         <div panel-name="test-xml-Functional_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -207,6 +227,7 @@ Session ID: 9206546e0d9ad188ad8749c088c814da
     &lt;classes&gt;
       &lt;class name=&quot;testClasses.TC_001_LoginHardCoded&quot;/&gt;
       &lt;class name=&quot;testClasses.TC_002_LoginFail&quot;/&gt;
+      &lt;class name=&quot;testClasses.TC_003_LoginFromProperties&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login Test --&gt;
 &lt;/suite&gt; &lt;!-- Functional Suite --&gt;
@@ -220,7 +241,7 @@ Session ID: 9206546e0d9ad188ad8749c088c814da
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login Test (2 classes)</span>
+                <span class="test-name">Login Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -246,20 +267,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_002_LoginHCFail')
 data.setCell(0, 2, 'testClasses.TC_002_LoginFail')
-data.setCell(0, 3, 10192);
+data.setCell(0, 3, 10179);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC_001_LoginHC')
 data.setCell(1, 2, 'testClasses.TC_001_LoginHardCoded')
-data.setCell(1, 3, 1525);
+data.setCell(1, 3, 1279);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_003_LoginProperties')
+data.setCell(2, 2, 'testClasses.TC_003_LoginFromProperties')
+data.setCell(2, 3, 1009);
 window.suiteTableData['Functional_Suite']= { tableData: data, tableDiv: 'times-div-Functional_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Functional_Suite">
               </div> <!-- times-div-Functional_Suite -->
             </div> <!-- times-div -->
@@ -292,28 +317,43 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC_001_LoginHC</span>
-                <span class="method-start">5248 ms</span>
+                <span class="method-start">4899 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7064 ms</span>
+                <span class="method-start">6275 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testClasses.TC_002_LoginFail</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">7153 ms</span>
+                <span class="method-start">6365 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC_002_LoginHCFail</span>
-                <span class="method-start">10548 ms</span>
+                <span class="method-start">10465 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20823 ms</span>
+                <span class="method-start">20741 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.TC_003_LoginFromProperties</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">20832 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_003_LoginProperties</span>
+                <span class="method-start">24926 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26007 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

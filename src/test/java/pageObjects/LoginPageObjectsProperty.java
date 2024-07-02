@@ -1,18 +1,21 @@
 package pageObjects;
 
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPageObjects 
+public class LoginPageObjectsProperty 
 {
 	WebDriver driver;
-	
+	Properties property;
     
-    public LoginPageObjects(WebDriver driver)
+    public LoginPageObjectsProperty(WebDriver driver, Properties property)
     {
         this.driver=driver;
+        this.property=property;
         PageFactory.initElements(driver, this);
     }
 
@@ -21,14 +24,14 @@ public class LoginPageObjects
     @FindBy(xpath="//button[@id='submit']") WebElement SubmitBtn;
 
 
-    public void setUsername(String uname)
+    public void setUsername()
     {
-        Username.sendKeys(uname);
+        Username.sendKeys(property.getProperty("userID"));
     }
 
-    public void setPassword(String pwd)
+    public void setPassword()
     {
-        Password.sendKeys(pwd);
+        Password.sendKeys(property.getProperty("password"));
     }
 
     public void clickSubmitBtn()
